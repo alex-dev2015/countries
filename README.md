@@ -1,6 +1,6 @@
 # React Countries
 
-## 📝 Table of Contents
+## 📝 Índice
 
 - [Sobre](#about)
 - [Começando](#getting_started)
