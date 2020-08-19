@@ -28,15 +28,28 @@ export default class App extends Component {
           population,
         }
     })
+
+    const filteredPopulation = this.calculateTotalPopulationFrom(allCountries);
+
+    
     
     this.setState({
       allCountries,
       filteredCountries: Object.assign([], allCountries) ,
+      filteredPopulation,
     });
 
 
 
     
+  }
+
+  calculateTotalPopulationFrom = (countries) =>{
+    const totalPopulation = countries.reduce((accumulator, current) => {
+      return accumulator + current.population
+    }, 0 );
+
+    return totalPopulation;
   }
 
   handleChangeFilter = (newText) =>{
@@ -50,9 +63,7 @@ export default class App extends Component {
       return country.filterName.includes(filterLowerCase);
     });
 
-    const filteredPopulation = filteredCountries.reduce((accumulator, current) => {
-      return accumulator + current.population
-    }, 0 );
+    const filteredPopulation = this.calculateTotalPopulationFrom(filteredCountries);
 
     
     this.setState({
@@ -68,7 +79,7 @@ export default class App extends Component {
 
     return (
       <div className="container">
-        <h1>React Coutries</h1>
+        <h1 style={styles.centeredTitle} >React Coutries</h1>
 
         <Header 
           filter={filter} 
@@ -81,5 +92,11 @@ export default class App extends Component {
 
       </div>
     )
+  }
+}
+
+const styles = {
+  centeredTitle: {
+    textAlign: 'center'
   }
 }
