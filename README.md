@@ -2,22 +2,22 @@
 
 ## 📝 Table of Contents
 
-- [About](#about)
-- [Getting Started](#getting_started)
-- [Usage](#usage)
-- [Built Using](#built_using)
-- [Authors](#authors)
+- [Sobre](#about)
+- [Começando](#getting_started)
+- [Uso](#usage)
+- [Ferramentas usadas](#built_using)
+- [Autor](#authors)
 
 
-## 🧐 About <a name = "about"></a>
+## 🧐 Sobre <a name = "about"></a>
 
 Consumo de uma api de países com fetch.
 
-## 🏁 Getting Started <a name = "getting_started"></a>
+## 🏁 Começando <a name = "getting_started"></a>
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See [deployment](#deployment) for notes on how to deploy the project on a live system.
+Essas instruções fornecerão uma cópia do projeto instalado e funcionando em sua máquina local para fins de desenvolvimento e teste.
 
-### Prerequisites
+### Pré requisitos
 
 Fazer o clone do projeto e entrar na pasta countries
 
@@ -26,7 +26,7 @@ git clone git@github.com:alex-dev2015/countries.git
 cd podcast_IGTI
 ```
 
-### Installing
+### Instalação
 
 Executar o gerenciador de pacotes npm ou o yarn
 
@@ -41,17 +41,17 @@ yarn
 Executar o servidor para rodar o projeto
 
 
-## 🎈 Usage <a name="usage"></a>
+## 🎈 Uso <a name="usage"></a>
 
 ![Countries](https://github.com/alex-dev2015/countries/blob/master/src/assets/image/Countries.gif)
 
 
-## ⛏️ Built Using <a name = "built_using"></a>
+## ⛏️ Ferramentas usadas <a name = "built_using"></a>
 
 - [JavaScript](https://developer.mozilla.org/pt-BR/docs/Aprender/JavaScript) - Javascript
 - [ReactJs](https://pt-br.reactjs.org/) - JavaScript library
 - [Materialize](https://materializecss.com/) - Stylization
 
-## ✍️ Authors <a name = "authors"></a>
+## ✍️ Autor <a name = "authors"></a>
 
 - [@alex-dev2015](https://github.com/alex-dev2015) - Alex Sousa
