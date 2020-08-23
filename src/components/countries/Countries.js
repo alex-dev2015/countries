@@ -1,12 +1,8 @@
-import React, { Component } from 'react'
+import React from 'react'
 import Country from './Country';
 import css from './countries.module.css';
 
-export default class Countries extends Component {
-  
-  render() {
-
-    const { countries } = this.props;
+export default function Countries({countries}) {
 
     return (
       <div className={`${css.border} ${css.flexRow}`}>
@@ -21,5 +17,5 @@ export default class Countries extends Component {
         
       </div>
     )
-  }
+  
 }

@@ -1,26 +1,28 @@
-import React, { Component } from 'react'
+import React from 'react'
 import { formatNumber } from '../../helpers/formatHelpers';
 import css from './header.module.css';
 
-export default class Header extends Component {
+export default function Header ({ 
+    filter , 
+    countryCount , 
+    totalPopulation, 
+    onChangeFilter
+  }) {
 
-  handleInputChange = (event) =>{
+  const handleInputChange = (event) =>{
     const newText = event.target.value;
 
-    this.props.onChangeFilter(newText);
+    onChangeFilter(newText);
   }
 
-  render() {
-
-    const { filter , countryCount , totalPopulation} = this.props;
-
+   
     return (
       <div className={css.flexRow} >
         <input 
           style={{width: '300px', margin: '10px'}}
           type="text"
           value={filter}
-          onChange={this.handleInputChange}
+          onChange={handleInputChange}
           placeholder="Filtro"
         /> |
         <span className={css.countries}>
@@ -29,5 +31,5 @@ export default class Header extends Component {
         <span className={css.population}>População: <strong> { formatNumber(totalPopulation)} </strong>  </span> {' '}
       </div>
     )
-  }
+  
 }
